@@ -1,0 +1,31 @@
+.container{
+    text-align: center;
+    margin-top: 20px;
+}
+table{
+    margin: auto;
+}
+input{
+    border-radius: 6px;
+    width: 170px;
+    font-size: 25px;
+}
+button{
+    border-radius: 12px;
+    font-size: 20px;
+    background-color: lightyellow;
+    width: 40px;
+    height: 40px;
+}
+.calculator{
+    display: inline-block;
+}
+h1{
+    font-size: 33px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 1px;
+}
+h2{
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
