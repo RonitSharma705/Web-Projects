@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+section .main{
+    width: 500px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section .main .search8x{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+section .main .search8x .quary{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    outline: none;
+    font-size: 15px;
+    border-radius: 15px;
+    padding-left: 50px;
+    padding-right: 55px;
+}
+
+section .main .search8x .icon{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    align-items: center;
+    pointer-events: none;
+}
+
+section .main .search8x .icon img{
+    max-width: 100%;
+}
+
+.search8tn{
+    margin: 0 5px;
+    margin-top: 25px;
+    padding: 12px 20px;
+    color: gray;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid black;
+    outline: none;
+}
+
+.search8tn:hover{
+    border: 1px solid gray;
+}

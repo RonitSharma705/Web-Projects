@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Clone</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <section>
+        <div class="main">
+            <img src="google.png">
+            <div class="search8x">
+                <input type="text" name="" class="quary" value="">
+                <div class="icon">
+                    <div><img src="search.png"></div>
+                    <div><img src="mic.png"></div>
+                </div>
+            </div>
+            <div class="button">
+                <button class="search8tn">GOOGLE SEARCH</button>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    let quary = document.querySelector('.quary');
+let search8tn = document.querySelector('.search8tn');
+
+search8tn.onclick = function(){
+    let url = 'https://www.google.com/search?q='+quary.value;
+    window.open(url);
+}
+</script>
+</html>
