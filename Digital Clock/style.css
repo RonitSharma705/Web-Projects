@@ -18,6 +18,7 @@ body{
     min-height: 100vh;
     background: #2f363e;
 }
+
 #time{
     display: flex;
     gap: 40px;
@@ -69,6 +70,7 @@ body{
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
+
 #time .ap{
     position: relative;
     font-size: 2em;
