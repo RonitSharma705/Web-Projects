@@ -1,0 +1,120 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.logo a{
+    text-decoration: none;
+    color: rgb(223, 206, 206);
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 8px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0.5rem 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: rgb(160, 171, 171);
+    transition: .3s linear;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+    margin-bottom: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    display: none; /* Hide all sections by default */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: rgb(223, 206, 206);
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 8px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide the menu by default */
+    }
+
+    nav.active ul {
+        display: block; /* Show the menu when the active class is applied */
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 1rem;
+        background: #333;
+    }
+}
+
+/* Hide toggle button on screens larger than 750px */
+@media (min-width: 751px) {
+    button.toggle-button {
+        display: none;
+    }
+}
+
+.toggle-button{
+    background-color: #333;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+
+.toggle-button:hover{
+    color: rgb(164, 196, 224);
+    transition: .3s linear;
+}

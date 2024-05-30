@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Documentation</title>
+    <link rel="stylesheet" href="note.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span><a href="#home">Z2H STUDY</a></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#javascript">JavaScript</a></li>
+                <li><a href="#python">Python</a></li>
+                <li><a href="#sql">SQL</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+
+    <main>
+        <section id="python">
+            <h1>Python</h1>
+            <p>Python is a high-level, interpreted programming language known for its readability and versatility. It is widely used in web development, data science, artificial intelligence, and more.</p>
+            <h2>Syntax</h2>
+            <p>Python syntax is designed to be readable and straightforward. It uses indentation to define code blocks.</p>
+            <pre><code class="language-python">def greet(name):
+            print(f"Hello, {name}!")
+        
+        greet("World")</code></pre>
+            <h2>Examples</h2>
+            <p>Here is a simple Python example that prints "Hello, World!" to the console:</p>
+            <pre><code class="language-python">print("Hello, World!")</code></pre>
+            <h2>Data Types</h2>
+            <p>Python supports various data types including:</p>
+            <ul>
+                <li><strong>Numbers:</strong> Integers, floating-point numbers, and complex numbers.</li>
+                <li><strong>Strings:</strong> Immutable sequences of characters.</li>
+                <li><strong>Lists:</strong> Mutable sequences of elements.</li>
+                <li><strong>Tuples:</strong> Immutable sequences of elements.</li>
+                <li><strong>Dictionaries:</strong> Unordered collections of key-value pairs.</li>
+                <li><strong>Sets:</strong> Unordered collections of unique elements.</li>
+                <li><strong>Booleans:</strong> True or False values.</li>
+                <li><strong>None:</strong> Represents absence of a value.</li>
+            </ul>
+            <h2>Functions</h2>
+            <p>Functions in Python allow code reuse and modularization. They can take arguments and return values:</p>
+            <pre><code class="language-python">def greet(name):
+            print(f"Hello, {name}!")
+        
+        greet("World")</code></pre>
+            <p>Python also supports anonymous functions using the lambda keyword:</p>
+            <pre><code class="language-python">add = lambda x, y: x + y
+        print(add(3, 5))  # Output: 8</code></pre>
+            <h2>Control Flow</h2>
+            <p>Python supports various control flow statements including:</p>
+            <ul>
+                <li><strong>if...elif...else:</strong> Conditional statements for branching.</li>
+                <li><strong>for:</strong> Iterating over sequences.</li>
+                <li><strong>while:</strong> Looping based on a condition.</li>
+                <li><strong>break:</strong> Exiting a loop prematurely.</li>
+                <li><strong>continue:</strong> Skipping the rest of the current iteration.</li>
+                <li><strong>pass:</strong> Placeholder indicating no action.</li>
+            </ul>
+            <h2>Modules and Packages</h2>
+            <p>Python allows organizing code into modules and packages for better organization and reuse. Modules are files containing Python code, while packages are directories containing modules and an <code>__init__.py</code> file:</p>
+            <pre><code class="language-python">import math
+        print(math.sqrt(25))  # Output: 5.0</code></pre>
+            <h2>Exception Handling</h2>
+            <p>Python provides try...except blocks for handling exceptions and errors:</p>
+            <pre><code class="language-python">try:
+            x = 1 / 0
+        except ZeroDivisionError:
+            print("Cannot divide by zero!")</code></pre>
+            <h2>File Handling</h2>
+            <p>Python allows reading from and writing to files:</p>
+            <pre><code class="language-python">with open("example.txt", "r") as file:
+            print(file.read())</code></pre>
+            <h2>Classes and Objects</h2>
+            <p>Python supports object-oriented programming with classes and objects:</p>
+            <pre><code class="language-python">class Person:
+            def __init__(self, name, age):
+                self.name = name
+                self.age = age
+        
+            def greet(self):
+                print(f"Hello, my name is {self.name} and I am {self.age} years old.")
+        
+        person = Person("Alice", 30)
+        person.greet()</code></pre>
+            <h2>Regular Expressions</h2>
+            <p>Python provides the <code>re</code> module for working with regular expressions:</p>
+            <pre><code class="language-python">import re
+        pattern = r"\b\w{3}\b"
+        text = "Python is a programming language"
+        matches = re.findall(pattern, text)
+        print(matches)  # Output: ['Python', 'is', 'programming', 'language']</code></pre>
+            <h2>Additional Documentation</h2>
+            <p>For more detailed documentation, refer to the official <a href="https://docs.python.org/3/">Python documentation</a>.</p>
+        </section>
+        
+        
+        <section id="javascript">
+            <h1>JavaScript</h1>
+            <p>JavaScript is a versatile language commonly used in web development for both client-side and server-side programming. It is essential for creating interactive web applications.</p>
+            <h2>Syntax</h2>
+            <p>JavaScript syntax is dynamic and can be used in both functional and object-oriented programming styles.</p>
+            <pre><code class="language-javascript">function greet(name) {
+            console.log(`Hello, ${name}!`);
+        }
+        
+        greet("World");</code></pre>
+            <h2>Examples</h2>
+            <p>Here is a simple JavaScript example that prints "Hello, World!" to the console:</p>
+            <pre><code class="language-javascript">console.log("Hello, World!");</code></pre>
+            <h2>Data Types</h2>
+            <p>JavaScript supports various data types including:</p>
+            <ul>
+                <li><strong>Numbers:</strong> Integers, floating-point numbers, and special numeric values like Infinity and NaN.</li>
+                <li><strong>Strings:</strong> Immutable sequences of characters.</li>
+                <li><strong>Booleans:</strong> True or False values.</li>
+                <li><strong>Objects:</strong> Collections of key-value pairs.</li>
+                <li><strong>Arrays:</strong> Ordered collections of elements.</li>
+                <li><strong>Undefined:</strong> Indicates a variable that has not been assigned a value.</li>
+                <li><strong>null:</strong> Represents the absence of any object value.</li>
+            </ul>
+            <h2>Functions</h2>
+            <p>Functions in JavaScript allow code reuse and modularization. They can take arguments and return values:</p>
+            <pre><code class="language-javascript">function add(x, y) {
+            return x + y;
+        }
+        
+        console.log(add(3, 5));  // Output: 8</code></pre>
+            <p>JavaScript also supports anonymous functions using the function keyword:</p>
+            <pre><code class="language-javascript">const greet = function(name) {
+            console.log(`Hello, ${name}!`);
+        }
+        
+        greet("World");</code></pre>
+            <h2>Control Flow</h2>
+            <p>JavaScript supports various control flow statements including:</p>
+            <ul>
+                <li><strong>if...else:</strong> Conditional statements for branching.</li>
+                <li><strong>for:</strong> Iterating over sequences.</li>
+                <li><strong>while:</strong> Looping based on a condition.</li>
+                <li><strong>break:</strong> Exiting a loop prematurely.</li>
+                <li><strong>continue:</strong> Skipping the rest of the current iteration.</li>
+                <li><strong>switch:</strong> Multi-way branch statement.</li>
+            </ul>
+            <h2>Objects and Classes</h2>
+            <p>JavaScript supports object-oriented programming with objects and classes:</p>
+            <pre><code class="language-javascript">class Person {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+        
+            greet() {
+                console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+            }
+        }
+        
+        const person = new Person("Alice", 30);
+        person.greet();</code></pre>
+            <h2>Modules and Packages</h2>
+            <p>JavaScript allows organizing code into modules and packages for better organization and reuse:</p>
+            <pre><code class="language-javascript">// Module: math.js
+        export function add(x, y) {
+            return x + y;
+        }
+        
+        // Module: main.js
+        import { add } from './math.js';
+        console.log(add(3, 5));  // Output: 8</code></pre>
+            <h2>Error Handling</h2>
+            <p>JavaScript provides try...catch blocks for handling exceptions and errors:</p>
+            <pre><code class="language-javascript">try {
+            const result = 1 / 0;
+        } catch (error) {
+            console.log("Error:", error.message);
+        }</code></pre>
+            <h2>Asynchronous Programming</h2>
+            <p>JavaScript supports asynchronous programming using callbacks, promises, and async/await:</p>
+            <pre><code class="language-javascript">// Callback example
+        function fetchData(callback) {
+            setTimeout(() => {
+                callback("Data fetched");
+            }, 1000);
+        }
+        
+        fetchData((data) => {
+            console.log(data);
+        });
+        
+        // Promise example
+        function fetchData() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve("Data fetched");
+                }, 1000);
+            });
+        }
+        
+        fetchData().then((data) => {
+            console.log(data);
+        });
+        
+        // Async/Await example
+        async function fetchData() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve("Data fetched");
+                }, 1000);
+            });
+        }
+        
+        async function fetchDataAndLog() {
+            const data = await fetchData();
+            console.log(data);
+        }
+        
+        fetchDataAndLog();</code></pre>
+            <h2>DOM Manipulation</h2>
+            <p>JavaScript is used to manipulate the Document Object Model (DOM) of web pages, allowing dynamic interaction with HTML elements:</p>
+            <pre><code class="language-javascript">// Change text content
+        document.getElementById("demo").textContent = "Hello, World!";
+        
+        // Add event listener
+        document.getElementById("btn").addEventListener("click", () => {
+            alert("Button clicked!");
+        });</code></pre>
+            <h2>Web APIs</h2>
+            <p>JavaScript interacts with various Web APIs to access browser functionalities:</p>
+            <pre><code class="language-javascript">// Fetch API for making HTTP requests
+        fetch('https://api.example.com/data')
+            .then(response => response.json())
+            .then(data => console.log(data));
+        
+        // Local Storage API for storing data locally
+        localStorage.setItem('key', 'value');
+        const storedValue = localStorage.getItem('key');</code></pre>
+            <h2>Asynchronous JavaScript</h2>
+            <p>Asynchronous JavaScript allows performing tasks without blocking the execution of other operations:</p>
+            <pre><code class="language-javascript">// setTimeout
+        console.log("Start");
+        setTimeout(() => {
+            console.log("Inside setTimeout");
+        }, 2000);
+        console.log("End");
+        
+        // setInterval
+        setInterval(() => {
+            console.log("Interval callback");
+        }, 1000);</code></pre>
+            <h2>Additional Resources</h2>
+            <p>For more detailed documentation and tutorials, refer to the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN Web Docs for JavaScript</a>.</p>
+        </section>
+        
+        
+        
+        
+        <section id="html">
+            <h1>HTML (HyperText Markup Language)</h1>
+            <p>HTML is the standard markup language for creating web pages. It describes the structure of web pages using markup.</p>
+            
+            <h2>Syntax</h2>
+            <p>HTML syntax consists of elements represented by tags.</p>
+            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Title of the document&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;This is a heading&lt;/h1&gt;
+            &lt;p&gt;This is a paragraph.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;</code></pre>
+        
+            <h2>Elements</h2>
+            <p>HTML documents are composed of various elements:</p>
+            <ul>
+                <li><strong>Headings:</strong> <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> for defining headings.</li>
+                <li><strong>Paragraphs:</strong> <code>&lt;p&gt;</code> for defining paragraphs.</li>
+                <li><strong>Links:</strong> <code>&lt;a&gt;</code> for creating hyperlinks.</li>
+                <li><strong>Images:</strong> <code>&lt;img&gt;</code> for embedding images.</li>
+                <li><strong>Lists:</strong> <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> for unordered and ordered lists.</li>
+                <li><strong>Forms:</strong> <code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>, etc., for user input.</li>
+                <li><strong>Tables:</strong> <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>, etc., for tabular data.</li>
+                <li><strong>Divisions:</strong> <code>&lt;div&gt;</code> for grouping elements.</li>
+                <li><strong>Attributes:</strong> HTML elements can have attributes like <code>id</code>, <code>class</code>, <code>src</code>, etc.</li>
+            </ul>
+            
+            <h2>Attributes</h2>
+            <p>HTML elements can have various attributes to provide additional information or behavior:</p>
+            <ul>
+                <li><strong>id:</strong> Specifies a unique id for an element.</li>
+                <li><strong>class:</strong> Specifies one or more class names for an element.</li>
+                <li><strong>src:</strong> Specifies the URL of an external resource like an image or script.</li>
+                <li><strong>href:</strong> Specifies the URL of a hyperlink.</li>
+                <li><strong>alt:</strong> Specifies an alternate text for an image.</li>
+                <li><strong>title:</strong> Specifies extra information about an element (tooltip).</li>
+                <li><strong>type:</strong> Specifies the type of an input element.</li>
+                <li><strong>value:</strong> Specifies the value of an input element.</li>
+                <li><strong>placeholder:</strong> Specifies a placeholder text for an input element.</li>
+            </ul>
+            
+            <h2>Forms</h2>
+            <p>HTML forms are used to collect user input. They consist of various form elements like text fields, checkboxes, radio buttons, etc.</p>
+            <pre><code class="language-html">&lt;form action="/submit" method="post"&gt;
+            &lt;label for="username"&gt;Username:&lt;/label&gt;
+            &lt;input type="text" id="username" name="username"&gt;
+            &lt;input type="submit" value="Submit"&gt;
+        &lt;/form&gt;</code></pre>
+            
+            <h2>Tables</h2>
+            <p>HTML tables are used to display tabular data:</p>
+            <pre><code class="language-html">&lt;table&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Name&lt;/th&gt;
+                &lt;th&gt;Age&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;John&lt;/td&gt;
+                &lt;td&gt;30&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Jane&lt;/td&gt;
+                &lt;td&gt;25&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;</code></pre>
+            
+            <h2>Metadata</h2>
+            <p>HTML documents can contain metadata, such as character encoding, viewport settings, etc.:</p>
+            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Title of the document&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            ...
+        &lt;/body&gt;
+        &lt;/html&gt;</code></pre>
+            
+            <h2>Links and Navigation</h2>
+            <p>HTML links are used for navigation:</p>
+            <pre><code class="language-html">&lt;a href="/page1"&gt;Page 1&lt;/a&gt;</code></pre>
+            
+            <h2>Audio and Video</h2>
+            <p>HTML supports embedding audio and video content:</p>
+            <pre><code class="language-html">&lt;audio controls&gt;
+            &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+            Your browser does not support the audio element.
+        &lt;/audio&gt;
+        
+        &lt;video controls&gt;
+            &lt;source src="video.mp4" type="video/mp4"&gt;
+            Your browser does not support the video element.
+        &lt;/video&gt;</code></pre>
+            
+            <h2>Canvas</h2>
+            <p>HTML5 introduced the <code>&lt;canvas&gt;</code> element for drawing graphics using JavaScript:</p>
+            <pre><code class="language-html">&lt;canvas id="myCanvas" width="200" height="100"&gt;
+            Your browser does not support the canvas element.
+        &lt;/canvas&gt;</code></pre>
+            
+        </section>
+        
+        
+        
+        <section id="css">
+            <h1>CSS (Cascading Style Sheets)</h1>
+            <p>CSS is a stylesheet language used to describe the presentation of a document written in HTML or XML. CSS describes how elements should be rendered on screen, on paper, or in other media.</p>
+        
+            <h2>Syntax</h2>
+            <p>CSS syntax consists of selectors and declarations. A declaration block contains one or more declarations separated by semicolons.</p>
+            <pre><code class="language-css">h1 {
+            color: blue;
+            font-size: 24px;
+        }</code></pre>
+        
+            <h2>Selectors</h2>
+            <p>Selectors are used to target HTML elements for styling:</p>
+            <ul>
+                <li><strong>Element Selector:</strong> Targets all instances of a specified HTML element.</li>
+                <li><strong>Class Selector:</strong> Targets elements with a specific class attribute.</li>
+                <li><strong>ID Selector:</strong> Targets a single element with a specific ID attribute.</li>
+                <li><strong>Attribute Selector:</strong> Targets elements based on their attributes.</li>
+                <li><strong>Descendant Selector:</strong> Targets elements that are descendants of a specified element.</li>
+                <li><strong>Child Selector:</strong> Targets elements that are direct children of a specified element.</li>
+                <li><strong>Adjacent Sibling Selector:</strong> Targets an element that is directly preceded by a specified element.</li>
+                <li><strong>Pseudo-classes and Pseudo-elements:</strong> Adds special effects to selected elements.</li>
+            </ul>
+        
+            <h2>Properties and Values</h2>
+            <p>CSS properties define how HTML elements are displayed:</p>
+            <ul>
+                <li><strong>Color:</strong> Sets the color of text.</li>
+                <li><strong>Font-family:</strong> Specifies the font family for text.</li>
+                <li><strong>Font-size:</strong> Sets the size of text.</li>
+                <li><strong>Background-color:</strong> Sets the background color of an element.</li>
+                <li><strong>Width and Height:</strong> Sets the width and height of an element.</li>
+                <li><strong>Margin and Padding:</strong> Adds space around or inside an element.</li>
+                <li><strong>Border:</strong> Sets the border of an element.</li>
+                <li><strong>Position:</strong> Specifies the positioning method of an element.</li>
+                <li><strong>Display:</strong> Defines the display behavior of an element.</li>
+                <li><strong>Float:</strong> Positions an element to the left or right within its container.</li>
+            </ul>
+        
+            <h2>CSS Box Model</h2>
+            <p>The CSS box model describes the design and layout of elements in CSS:</p>
+            <ul>
+                <li><strong>Content:</strong> The content of the box, where text and images appear.</li>
+                <li><strong>Padding:</strong> Transparent area around the content, inside the border.</li>
+                <li><strong>Border:</strong> The border of the box.</li>
+                <li><strong>Margin:</strong> Transparent area outside the border, between the border and adjacent elements.</li>
+            </ul>
+        
+            <h2>Positioning</h2>
+            <p>CSS offers different positioning schemes for elements:</p>
+            <ul>
+                <li><strong>Static:</strong> Default positioning; elements are positioned according to the normal flow of the document.</li>
+                <li><strong>Relative:</strong> Positions an element relative to its normal position.</li>
+                <li><strong>Absolute:</strong> Positions an element relative to its nearest positioned ancestor.</li>
+                <li><strong>Fixed:</strong> Positions an element relative to the browser window.</li>
+            </ul>
+        
+            <h2>Responsive Design</h2>
+            <p>CSS can be used to create responsive designs that adapt to different screen sizes:</p>
+            <ul>
+                <li><strong>Media Queries:</strong> Conditionally apply CSS based on device characteristics like screen width.</li>
+                <li><strong>Viewport Meta Tag:</strong> Sets the viewport width and initial scale.</li>
+                <li><strong>Flexible Layouts:</strong> Use percentage widths and flexible units like em and rem.</li>
+            </ul>
+        
+            <h2>Animation and Transitions</h2>
+            <p>CSS allows for creating animations and transitions to enhance user experience:</p>
+            <ul>
+                <li><strong>Transitions:</strong> Smoothly animate changes in CSS properties.</li>
+                <li><strong>Keyframe Animations:</strong> Define complex animations using keyframes.</li>
+            </ul>
+        
+            <h2>Preprocessors</h2>
+            <p>CSS preprocessors extend the functionality of CSS with features like variables, mixins, and nesting:</p>
+            <ul>
+                <li><strong>Sass (Syntactically Awesome Stylesheets):</strong> Adds features like variables, nesting, and mixins.</li>
+                <li><strong>Less:</strong> Similar to Sass, with features like variables and mixins.</li>
+                <li><strong>Stylus:</strong> A more expressive and flexible CSS preprocessor.</li>
+            </ul>
+        
+            <h2>Frameworks and Libraries</h2>
+            <p>Frameworks and libraries provide pre-written CSS styles and components for building websites:</p>
+            <ul>
+                <li><strong>Bootstrap:</strong> A popular CSS framework for building responsive and mobile-first websites.</li>
+                <li><strong>Foundation:</strong> Another responsive front-end framework for building websites and web applications.</li>
+                <li><strong>Tailwind CSS:</strong> A utility-first CSS framework for rapidly building custom designs.</li>
+            </ul>
+        
+            <h2>CSS Grid and Flexbox</h2>
+            <p>CSS Grid and Flexbox are layout models that simplify the design and alignment of elements:</p>
+            <ul>
+                <li><strong>CSS Grid:</strong> A two-dimensional layout system for creating grid-based designs.</li>
+                <li><strong>Flexbox:</strong> A one-dimensional layout model for arranging elements in a row or column.</li>
+            </ul>
+        
+            <h2>Vendor Prefixes</h2>
+            <p>Vendor prefixes are used to add browser-specific CSS properties:</p>
+            <ul>
+                <li><strong>-webkit-:</strong> Safari and Chrome.</li>
+                <li><strong>-moz-:</strong> Firefox.</li>
+                <li><strong>-ms-:</strong> Internet Explorer.</li>
+                <li><strong>-o-:</strong> Opera.</li>
+            </ul>
+        
+            <h2>CSS Variables</h2>
+            <p>CSS variables allow for defining reusable values in CSS:</p>
+            <pre><code class="language-css">:root {
+            --main-color: #336699;
+        }
+        
+        .element</code></pre>
+        
+        </section>
+        
+        
+        <section id="sql">
+            <h1>SQL (Structured Query Language)</h1>
+            <p>SQL is a standard language for accessing and manipulating databases. It is used to perform tasks such as retrieving data from a database, inserting data into a database, updating data in a database, and deleting data from a database.</p>
+        
+            <h2>Basic Syntax</h2>
+            <p>SQL syntax typically consists of clauses such as SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY, etc.:</p>
+            <pre><code class="language-sql">SELECT column1, column2
+        FROM table_name
+        WHERE condition;</code></pre>
+        
+            <h2>Queries</h2>
+            <p>SQL queries are used to retrieve data from a database:</p>
+            <pre><code class="language-sql">SELECT * FROM table_name;</code></pre>
+        
+            <h2>Joins</h2>
+            <p>SQL JOIN clauses are used to combine rows from two or more tables based on a related column between them:</p>
+            <pre><code class="language-sql">SELECT Orders.OrderID, Customers.CustomerName
+        FROM Orders
+        INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;</code></pre>
+        
+            <h2>Aggregate Functions</h2>
+            <p>SQL aggregate functions perform calculations on a set of values and return a single value:</p>
+            <ul>
+                <li><strong>AVG:</strong> Calculates the average value.</li>
+                <li><strong>COUNT:</strong> Counts the number of rows.</li>
+                <li><strong>MAX:</strong> Returns the maximum value.</li>
+                <li><strong>MIN:</strong> Returns the minimum value.</li>
+                <li><strong>SUM:</strong> Calculates the sum of values.</li>
+            </ul>
+        
+            <h2>Subqueries</h2>
+            <p>SQL subqueries are queries nested within another query:</p>
+            <pre><code class="language-sql">SELECT column_name(s)
+        FROM table_name
+        WHERE column_name IN (SELECT column_name
+                              FROM table_name
+                              WHERE condition);</code></pre>
+        
+            <h2>Constraints</h2>
+            <p>SQL constraints are used to specify rules for data in a table:</p>
+            <ul>
+                <li><strong>NOT NULL:</strong> Ensures a column cannot have a NULL value.</li>
+                <li><strong>UNIQUE:</strong> Ensures that each row in a column is unique.</li>
+                <li><strong>PRIMARY KEY:</strong> Uniquely identifies each row in a table.</li>
+                <li><strong>FOREIGN KEY:</strong> Enforces a link between data in two tables.</li>
+                <li><strong>CHECK:</strong> Ensures that all values in a column satisfy certain conditions.</li>
+                <li><strong>DEFAULT:</strong> Specifies a default value for a column when no value is provided.</li>
+            </ul>
+        
+            <h2>Transactions</h2>
+            <p>SQL transactions are units of work that are performed as a single logical operation:</p>
+            <pre><code class="language-sql">BEGIN TRANSACTION;
+        -- SQL statements here
+        COMMIT;</code></pre>
+        
+            <h2>Indexes</h2>
+            <p>SQL indexes are used to speed up the retrieval of rows from a table:</p>
+            <pre><code class="language-sql">CREATE INDEX index_name
+        ON table_name (column_name);</code></pre>
+        
+            <h2>Views</h2>
+            <p>SQL views are virtual tables based on the result set of a SELECT query:</p>
+            <pre><code class="language-sql">CREATE VIEW view_name AS
+        SELECT column1, column2
+        FROM table_name
+        WHERE condition;</code></pre>
+        
+            <h2>Stored Procedures</h2>
+            <p>SQL stored procedures are prepared SQL code that can be saved and reused:</p>
+            <pre><code class="language-sql">CREATE PROCEDURE procedure_name
+        AS
+        SQL_statements;</code></pre>
+        
+            <h2>Triggers</h2>
+            <p>SQL triggers are special stored procedures that are automatically executed when certain events occur:</p>
+            <pre><code class="language-sql">CREATE TRIGGER trigger_name
+        ON table_name
+        FOR INSERT
+        AS
+        SQL_statements;</code></pre>
+        
+            <h2>Normalization</h2>
+            <p>SQL normalization is the process of organizing data in a database to reduce redundancy and improve data integrity:</p>
+            <ul>
+                <li><strong>First Normal Form (1NF):</strong> Eliminates repeating groups by putting each value in a separate column.</li>
+                <li><strong>Second Normal Form (2NF):</strong> Meets the requirements of 1NF and ensures that non-key attributes are fully functional dependent on the primary key.</li>
+                <li><strong>Third Normal Form (3NF):</strong> Meets the requirements of 2NF and removes transitive dependencies.</li>
+            </ul>
+        
+            <h2>Views vs. Materialized Views</h2>
+            <p>Materialized views store the result of a query physically, whereas views do not. Materialized views are useful when you need to access precomputed results frequently:</p>
+            <pre><code class="language-sql">CREATE MATERIALIZED VIEW mv_name AS
+        SELECT column1, column2
+        FROM table_name
+        WHERE condition;</code></pre>
+        
+            <h2>Full-Text Search</h2>
+            <p>Full-text search allows users to search for documents or specific words or phrases:</p>
+            <pre><code class="language-sql">SELECT *
+        FROM table_name
+        WHERE MATCH(column_name) AGAINST('search_term');</code></pre>
+        
+            <h2>Window Functions</h2>
+            <p>Window functions perform a calculation across a set of table rows that are related to the current row:</p>
+            <pre><code class="language-sql">SELECT column1, column2, SUM(column3) OVER (PARTITION BY column1) AS column3_sum
+        FROM table_name;</code></pre>
+        
+            <h2>Recursive Queries</h2>
+            <p>Recursive queries are used to query hierarchical data:</p>
+            <pre><code class="language-sql">WITH RECURSIVE cte AS (
+          SELECT id, parent_id
+          FROM table_name
+          WHERE id = 1
+          UNION ALL
+          SELECT t.id, t.parent_id
+          FROM table_name t
+          JOIN cte ON cte.id = t.parent_id
+        )
+        SELECT *
+        FROM cte;</code></pre>
+        </section>
+        
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Z2H STUDY</p>
+    </footer>
+
+    <script src="note.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+</body>
+</html>
